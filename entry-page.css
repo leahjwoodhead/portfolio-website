@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+.wrapper {
+    display: block;
+    height: 100%;
+}
+
+
+h1 {
+    position: relative;
+    margin-top: 200px;
+    font-size: 5vw;
+    color: pink;
+    text-align: center;
+}
+
+.enter-site {
+    color: pink;
+    font-size: 3vw;
+    text-align: center;
+}

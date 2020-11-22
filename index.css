@@ -1,101 +1,112 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: lightpink;
   min-height: 100%;
 }
 .nav-bar {
-  display: relative;
-  background-color: gray;
+  background-color: #ffaa80;
   overflow: hidden;
-  height: 130px;
-}
-
-.centered-links {
-  margin-top: 50px;
-  padding: 5px;
-  position: relative;
+  height: 100px;
   text-align: center;
+ 
 }
 
 .nav-bar a {
-  text-align: center;
+  position: relative;
   color: white;
-  margin-left: 16px;
-  margin-right: 15px;
-  width: 30px;
-  padding: 50px;
-  font-size: 80%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  font-family: 'Alegreya Sans', sans-serif;
+  top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-
-
-.nav-bar a:focus {
-  background-color: pink;
+.nav-bar a:hover {
+  color: grey;
 }
+
 
 .main {
   position: relative;
-  display: inline-grid;
   width: 100%;
   justify-content: center;
 }
 
-.block {
-  border-radius: 10px;
-  padding: 100px;
-  margin: 100px;
-  background-color: black;
-  display: flex;
-  width: 50vw;
-  height: 20vw;
-  justify-content: space-between;
-  align-items: center;
+/* complete */
+
+
+.section {
+  width: 100%;
+  height: 50vw;
+  background-color:white;
+  text-align: center;
+  border-bottom: dashed;
 }
 
-.block:hover {
-  background-color: grey;
+h2 {
+  position: relative;
+  max-width: 36%;
+  left: 32%;
+  font-size: 6vw;
+  color:grey;
+  font-family: 'Alegreya Sans', sans-serif;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 3s steps(29) 1s 1 normal both;
+  animation-iteration-count: 1;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
-.left {
-  order: 0;
-  text-align: left;
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  flex-wrap: wrap;
+@keyframes animated-text {
+  from{width:0;}
+  to {width: 700px;}
 }
 
-.right p {
-  padding: 100px;
-  font-size: 1vw;
+p {
+  font-size: 1.5vw;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: grey;
+  font-style: italic;
+  line-height: 2;
 }
 
 .right img {
-  order: 1;
-  text-align: right;
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
+
 }
 
 img.rounded {
   border-radius: 10px;
 }
 
-h2 {
-  font-size: 4vw;
-  color: white;
+
+
+
+
+.section-two {
+  width: 100%;
+  height: 50vw;
+  background-color:white;
+  text-align: center;
+  border-bottom: dashed;
 }
 
-p {
-  font-size: 1vw;
-  color: white;
+.section-three {
+  background-color: white;
+  width: 100%;
+  height: 50vw;
 }
+
+
+
+
+
+
+
 
 .footer {
-  background-color: gray;
+  background-color: grey;
   overflow: hidden;
   height: 100px;
   text-align: left;
@@ -106,9 +117,9 @@ p {
 
 .footer a {
   text-align: center;
-  color: white;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  color:  white;
+  font-size: 1vw;
+  font-family: 'Alegreya Sans', sans-serif;
   padding: 20px;
 }
 
